@@ -15,10 +15,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.next-steps {
-  .fa-link {
-    margin-right: 5px;
-  }
-}
-</style>
+<style lang="scss" scoped></style>
