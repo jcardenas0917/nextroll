@@ -9,8 +9,7 @@ const profileSchema = new Schema({
     stripes: { type: String, required: true },
     academy: { type: String, required: true },
     city: { type: String, required: true },
-    profession: { type: String, required: true },
-    sub: { type: String, required: true },
+    technique: { type: String, required: true },
     instructor: { type: String, required: true },
     image: { type: String, required: false },
 

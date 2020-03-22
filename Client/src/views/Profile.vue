@@ -3,7 +3,6 @@
 </template>
 <script>
 import { getProfile } from "../utils/API.js";
-import { useAuth0 } from "../auth/authWrapper.js";
 export default {
   name: "profile",
   components: {},
