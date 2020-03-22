@@ -20,6 +20,12 @@ const router = new Router({
       name: "profile",
       component: Profile,
       beforeEnter: authGuard
+    },
+    {
+      path: "/CreateProfile",
+      name: "CreateProfile",
+      component: CreateProfile,
+      beforeEnter: authGuard
     }
   ]
 });

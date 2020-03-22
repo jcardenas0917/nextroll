@@ -1,28 +1,18 @@
 <template>
   <div>
-    <hero />
-    <hr />
-    <home-content />
+    <Welcome />
   </div>
 </template>
 
 <script>
-import Hero from "../components/Hero";
-import HomeContent from "../components/HomeContent";
+import Welcome from "../components/Welcome";
 
 export default {
   name: "home",
   components: {
-    Hero,
-    HomeContent
+    Welcome
   }
 };
 </script>
 
-<style lang="scss" scoped>
-.next-steps {
-  .fa-link {
-    margin-right: 5px;
-  }
-}
-</style>
+<style lang="scss" scoped></style>
