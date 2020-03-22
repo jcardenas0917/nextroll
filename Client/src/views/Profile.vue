@@ -2,20 +2,20 @@
   <div class="container"></div>
 </template>
 <script>
-import { getProfiles } from "../utils/API.js";
-
+import { getProfile } from "../utils/API.js";
+import { useAuth0 } from "../auth/authWrapper.js";
 export default {
   name: "profile",
   components: {},
   data() {
     return {
-      email: $auth.user.email
+      email: this.$auth.user.email
     };
   },
   computed: {},
   methods: {},
   mounted: function() {
-    getProfiles(email).then(data => {
+    getProfile(this.email).then(data => {
       this.$store.commit("setProfile", data);
     });
   }

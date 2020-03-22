@@ -1,8 +1,8 @@
 import axios from "axios";
 
 //Get Profile API
-export function getProfiles(email) {
-    return axios.get("/api/profile");
+export function getProfile(email) {
+    return axios.get("/api/profile/email" + email);
 }
     // //Get specific profile by email
     // getProfile: function (email) {
