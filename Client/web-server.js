@@ -8,7 +8,7 @@ app.use(morgan("dev"));
 app.use(express.static(join(__dirname, "dist")));
 
 app.use((_, res) => {
-  res.sendFile(join(__dirname, "dist", "index.html"));
+    res.sendFile(join(__dirname, "dist", "index.html"));
 });
 
 app.listen(3000, () => console.log("Listening on port 3000"));

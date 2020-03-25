@@ -2,7 +2,7 @@ import axios from "axios";
 
 //Get Profile API
 export function getProfile(email) {
-    return axios.get("/api/profile/email" + email);
+    return axios.get("/api/profile/email/" + email);
 }
 // getProfileByNickName: function (nickname) {
 //     console.log(nickname)

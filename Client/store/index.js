@@ -5,7 +5,6 @@ Vue.use(Vuex);
 
 const state = {
     profile: {},
-
 }
 
 const mutations = {
