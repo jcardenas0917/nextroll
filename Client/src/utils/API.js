@@ -2,24 +2,20 @@ import axios from "axios";
 
 //Get Profile API
 export function getProfile(email) {
-    return axios.get("/api/profile/email" + email);
+    return axios.get("/api/profile/email/" + email);
 }
-    // //Get specific profile by email
-    // getProfile: function (email) {
-    //     return axios.get("/api/profile/email/" + email);
-    // },
-    // getProfileByNickName: function (nickname) {
-    //     console.log(nickname)
-    //     return axios.get("/api/profile/nickname/" + nickname);
-    // },
-    // //Delete Profile not being used
-    // deleteProfile: function (email) {
-    //     return axios.delete("/api/profile/email" + email);
-    // },
-    // //Create new profile API
-    // saveProfile: function (profileData) {
-    //     return axios.post("/api/profile", profileData);
-    // },
+// getProfileByNickName: function (nickname) {
+//     console.log(nickname)
+//     return axios.get("/api/profile/nickname/" + nickname);
+// },
+// //Delete Profile not being used
+// deleteProfile: function (email) {
+//     return axios.delete("/api/profile/email" + email);
+// },
+// //Create new profile API
+export function saveProfile(userProfile) {
+    return axios.post("/api/profile", userProfile);
+}
     // //Edit Profile API
     // updateProfile: function (email, profileData) {
     //     return axios.put("/api/profile/email/" + email, profileData)

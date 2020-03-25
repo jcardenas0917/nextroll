@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "../views/Home.vue";
 import Profile from "../views/Profile.vue";
+import CreateProfile from "../views/CreateProfile.vue";
 import { authGuard } from "../auth";
 
 Vue.use(Router);
@@ -22,7 +23,7 @@ const router = new Router({
       beforeEnter: authGuard
     },
     {
-      path: "/CreateProfile",
+      path: "/createProfile",
       name: "CreateProfile",
       component: CreateProfile,
       beforeEnter: authGuard

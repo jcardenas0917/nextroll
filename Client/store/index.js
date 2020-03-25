@@ -10,7 +10,7 @@ const state = {
 const mutations = {
     setProfile(state, data) {
         state.setProfile = data
-    }
+    },
 }
 
 const actions = {};
